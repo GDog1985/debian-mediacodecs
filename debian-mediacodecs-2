@@ -19,5 +19,5 @@ apt-get install w64codecs  --force-yes
 apt-get install lame --force-yes
 apt-get install libdvdcss2 --force-yes
 apt-get install ffmpeg --force-yes
-apt-get install libavcodec-extra-52  --force-yes
+apt-get install libavcodec52  --force-yes
 apt-get install gstreamer0.10-lame --force-yes
