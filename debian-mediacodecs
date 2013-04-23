@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -p "Install w64codes(y/n)?"
+[ "$REPLY" == "y" ] || wget http://mirror.optus.net/debian-multimedia/pool/non-free/w/w64codecs/w64codecs_20071007-dmo2_amd64.deb
+dpkg -i w64codecs_20071007-dmo2_amd64.deb
