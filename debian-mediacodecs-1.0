@@ -3,7 +3,6 @@ read -p "Install media codecs "
 [ "$REPLY" == "y" ] | apt-get install debian-keyring
  gpg --keyring /usr/share/keyrings/debian-keyring.gpg -a --export 07DC563D1F41B907 |apt-key add -
 echo deb http://mirror.optus.net/debian-multimedia/ stable main >> /etc/apt/sources.list
-gpg --keyserver  http://mirror.optus.net --recv-key 07DC563D1F41B907
 apt-get update
 apt-get upgrade
 apt-get install w64codecs  --force-yes
