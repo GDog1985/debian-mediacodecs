@@ -1,0 +1,12 @@
+#!/bin/bash
+read -p "Install media codecs "
+[ "$REPLY" == "y" ] | echo deb http://mirror.optus.net/debian-multimedia/ stable main >> /etc/apt/sources.list
+apt-get update
+apt-get upgrade
+apt-get install w64codecs  --force-yes
+apt-get install lame --force-yes
+apt-get install libdvdcss2 --force-yes
+apt-get install libavcodec-extra-52  --force-yes
+apt-get install gstreamer0.10-lame --force-yes
+
+
